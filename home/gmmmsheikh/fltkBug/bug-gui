@@ -1,0 +1,36 @@
+# data file for the Fltk User Interface Designer (fluid)
+version 1.0305
+header_name {.h}
+code_name {.cxx}
+decl {\#include <iostream>} {private local
+}
+
+decl {\#include "bug.h"} {private local
+}
+
+decl {\#include <FL_Fl_Image.H>} {private local
+}
+
+Function {make_window()} {open
+} {
+  Fl_Window win {
+    label {Bgu Animation} open
+    xywh {487 190 500 500} type Double hide
+  } {
+    Fl_Button {} {
+      label Move
+      xywh {220 445 75 30}
+    }
+    Fl_Box b {selected
+      xywh {50 25 400 400}
+    }
+    Fl_Button {} {
+      label Turn
+      xywh {120 445 75 30}
+    }
+    Fl_Button {} {
+      label Path
+      xywh {25 445 70 30}
+    }
+  }
+}
